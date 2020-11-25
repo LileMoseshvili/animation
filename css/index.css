@@ -1,0 +1,392 @@
+.header-wrapper {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    padding-left: 100px;
+}
+
+.f-left {
+    float: left;
+}
+.f-right {
+    float: right;
+}
+.nav-li {
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.nav-a {
+    color: black;
+    font-size: 18px;
+    transition: all 0.2s linear 0.1s;
+    font-family:'Back to 1982';
+    
+}
+
+.nav-a:hover {
+    color: grey;
+}
+
+.clear {
+    clear: both;
+}
+.navigation {
+    margin-left: 185px;
+}
+.logo {
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+
+/* icons */
+.icon-li {
+    margin-right: 6px;
+    
+}
+.icons {
+    margin-top: 15px;
+    margin-right: 15px;
+}
+body {
+    padding-top: 60px;
+    position: relative;
+}
+
+.blue {
+    width: 100%;
+    height: 40px;
+}
+
+.container {
+    width: 965px;
+    height: 600px;
+    background-color: lavender;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid black;
+}
+
+
+
+.girl-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* animation: ggirl 1s linear infinite; */
+}
+.heart1 {
+    position: absolute;
+    top: 48%;
+    left: 40%;
+    animation: love1 1s infinite;
+}
+
+.heart2 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    animation: love2 1.2s infinite;
+}
+.heart3 {
+    position: absolute;
+    top: 45%;
+    left: 37%;
+    animation: love3 1.3s infinite;
+}
+ .bubble {
+    
+    position: absolute;
+    top: -10%;
+    left: 20%;
+}
+
+.text-container {
+    position: absolute;
+    top: 18%;
+    left: 33%;
+
+}     
+
+.text {
+    margin-right: 8px;
+    font-size: 12px;
+    font-family: 'Back to 1982';
+    color: #380c4f;
+    opacity: 0;
+} 
+
+.text1 {
+    animation: text1-animation 1.2s linear infinite;
+}
+
+.text2 {
+    animation: text2-animation 1.2s linear infinite;
+}
+
+@keyframes text1-animation {
+    25% {opacity: 0;}
+    50% {opacity: 1;}
+    75% {opacity: 0;}
+}
+
+@keyframes text2-animation {
+    50% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes love1 {
+    from {top: 330px;}
+    to {top: 230px; opacity: 0;}
+}
+@keyframes love2 {
+    from {top: 340px;}
+    to {top: 200px; opacity: 0;}
+}
+
+@keyframes love3 {
+    0% {top: 340px; }
+    25% {top: 250px; }
+    50% {top: 240px;}
+    75% {top: 230px;}
+    100% {top: 210px; left: 350px; opacity: 0}
+
+}
+
+/* second */
+
+.section2 {
+    margin-top: 40px;
+}
+.container2 {
+    width: 900px;
+    height: 130px;
+    margin:0 auto;
+    text-align: center;
+}
+.buttom:hover{
+    transform: scale(1.5, 1.5);
+    cursor: pointer;
+}
+.buttom {
+    transition: all 0.2s linear 0.1ms;
+}
+
+/* section-3 */
+
+.section3 {
+    margin-top: 10px;
+}
+
+@keyframes bebe {
+    from {left: 0px;}
+    to {left: 1435px; }
+}
+.baby {
+    position: absolute;
+    animation: bebe 10s linear infinite;
+}
+
+
+.baby1 {
+    position: absolute;
+    animation: bebe1 8s linear infinite;
+    transition: all 0.2s linear 0.1s;
+    z-index: 1;
+
+}
+
+.baby1:hover {
+    transform: scale(2,2);
+    cursor: pointer;
+}
+@keyframes bebe1 {
+    0% {top:0; left: 0px;}
+    25% {top:200px; left: 500px;}
+    50% {top:560px; left:10px;}
+    75% {top:300px; left: 25px;}
+    100% {top: 0px; left: 0px;}
+}
+
+
+@keyframes ggirl
+{
+    100% {
+        transform: translateY(-1px) translate(-50%, -50%);
+    }
+    50% {
+        transform: translateY(1px) translate(-50%, -50%);
+    }
+    0% {
+        transform: translateY(-1px) translate(-50%, -50%);
+    }
+
+}
+.moving-image1
+{
+       position: absolute;
+    animation: move1 5s infinite linear;
+    transition: all 0.2s linear 0.1s;
+
+}
+
+@keyframes move1 {
+    0% {top:200px; left: 80px;}
+    25% {top:300px; left: 150px;}
+    50% {top:500px; left:100px;}
+    75% {top:400px; left: 10px;}
+    100% {top: 200px; left: 80px;}
+}
+
+.moving-image2 {
+    position: absolute;
+    animation: move2 5s infinite linear;
+    transition: all 0.2s linear 0.1s;
+
+}
+@keyframes move2 {
+
+    0% {top:200px; right: 80px;}
+    25% {top:300px; right: 150px;}
+    50% {top:500px; right:100px;}
+    75% {top:400px; right: 10px;}
+    100% {top: 200px; right: 80px;}
+}
+
+.moving-image2:hover {
+    transform: scale(2,2);
+    cursor: pointer;
+}
+.moving-image1:hover {
+    transform: scale(2,2);
+    cursor: pointer;
+}
+
+.section3 {
+    width: 100%;
+    height: 40px;
+}
+
+.footer-wrapper {
+    width: 965px;
+    margin:0 auto;
+}
+
+
+.company,
+.service,
+.orders {
+    float: left;
+    
+}
+
+
+.company {
+    margin-right: 198px;
+}
+.service {
+    margin-right: 242px;
+}
+.foot-title {
+    margin-bottom: 15px;
+    font-family: 'Back to 1982';
+}
+
+
+.copyright {
+    width: 1324px;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 137px;
+}
+.end-text {
+    float: right;
+    color: #A4A4A4;
+    font-size: 16px;
+    font-family: 'Back to 1982';
+}
+
+.li-marg {
+    margin-bottom: 10px;
+    font-family: 'Back to 1982';
+    font-size: 10px;
+
+}
+.footer-wrapper {
+    text-align: center;
+}
+
+
+.foni{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-color: lavender;
+    overflow-x: hidden;
+  }
+
+  .cloud1 {
+      position: absolute;
+      right: -500px;
+      animation: clouds 15s infinite linear;
+  }
+  .cloud2 {
+      position: absolute;
+      top: 0;
+      right: -500px;
+      animation: clouds 13s infinite linear;
+
+  }
+  .cloud3 {
+      position: absolute;
+      top: 0;
+      right: -500px;
+      animation: clouds 8s infinite linear;
+      z-index: 2;
+
+  }
+
+  .cloud4 {
+    position: absolute;
+    top: 0;
+    right: -500px;
+    animation: clouds 18s infinite linear;
+    z-index: 2;
+
+}
+  /* @keyframes clouds {
+      100% {transform: translateX(-1900px);}
+  } */
+
+  @keyframes clouds {
+      from {left: 100%;}
+      to {left: -500px;}
+  }
+
+  @keyframes angel-move {
+      50% {transform: translateY(10px);}
+      100% {transform: translateY(0);}
+  }
+  .angel {
+      position: absolute;
+      top: 60px;
+      left: 300px;
+      animation: angel-move 1s linear infinite;
+
+  }
+
+  .cloud5 {
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    animation: angel-move 1s linear infinite;
+
+}
+
+  
